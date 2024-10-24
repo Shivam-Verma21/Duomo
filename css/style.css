@@ -1,0 +1,113 @@
+.sidenav-container {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: width 0.5s
+}
+
+/* #dropdown-ul{
+    transition: all 5s;
+    transition-delay: 3s;
+} */
+
+.bg-img{
+    background-image: url(/images/bg-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+}
+
+.home{
+    width: 77% !important
+}
+
+
+/* CAROUSEL */
+.carousel-container {
+    position: relative;
+    max-width: 100vw; 
+    overflow: hidden; 
+    margin-top: 40px;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: calc(6 * 25vw);
+}
+
+.carousel-slide {
+    min-width: 33.33vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 300px;
+    display: block;
+    border: 2px solid rgb(187, 187, 187);
+}
+
+.carousel-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.carousel-button {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+    border: none;
+    padding: 10px 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 20px;
+}
+
+.carousel-button img{
+    height: 20px;
+    /* width: 20px; */
+    border: none;
+}
+/*  */
+
+
+@media (max-width:768px) and (min-width:280px){
+    .bg-img{
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width:1839px) and (min-width:1565px) {
+    .home-banner {
+        width: 77% !important
+    }
+}
+
+@media (max-width:1564px) and (min-width:1096px) {
+    .home-banner {
+        width: 88% !important
+    }
+}
+
+@media (max-width:1095px) and (min-width:1024px) {
+    .home-banner {
+        width: 90% !important
+    }
+}
+
+@media (max-width:1024px) and (min-width:280px) {
+    .home-banner {
+        width: 90% !important
+    }
+}
+
