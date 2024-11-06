@@ -9,10 +9,29 @@
     transition: width 0.5s
 }
 
-/* #dropdown-ul{
-    transition: all 5s;
-    transition-delay: 3s;
+#dropdown-ul{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* .dropdown-li:hover {
+    border-bottom: 3px solid #001D3D;
 } */
+
+.dropdown-li::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 100%;
+    border-bottom: 3px solid transparent;
+    /* transition: border-color 0.2s; */
+    pointer-events: none;
+}
+
+.dropdown-li:hover::after{
+    border-color: #001D3D;
+}
 
 .bg-img{
     background-image: url(/images/bg-img.jpg);
